@@ -38,3 +38,50 @@ reassigning a variable. I should use let when I know that the value
 needs to change later in the program.*/
 
 /* Using abbreviated words when naming a variable is not recommended because they are not discriptive and sometimes may be diffucult to understand and maintain.*/
+
+
+/* CHALLENGE 2: typeof operator */
+
+// We are checking the data types of the variables we created in challenge 1 using the typeof operator.
+
+console.log("Data type of fullName:", typeof fullName); // string
+
+console.log("Data type of age:", typeof age); // number
+
+console.log("Data type of isEnjoyingJavaScript:", typeof isEnjoyingJavaScript); // boolean
+
+console.log("Data type of favouriteTemperature:", typeof favouriteTemperature);
+
+console.log("typeof notANumber:", typeof notANumber);
+
+console.log("typeof infiniteValue:", typeof infiniteValue);
+
+console.log("typeof maximumSafeInteger:", typeof maximumSafeInteger);
+
+console.log("typeof emptyValue:", typeof emptyValue);
+
+// Checking other typeof data
+
+console.log("typeof undefined:", typeof undefined);
+
+console.log("typeof null:", typeof null);
+
+console.log("typeof NaN:", typeof NaN);
+
+console.log('typeof "42":', typeof "42");
+
+console.log("typeof (typeof 42):", typeof (typeof 42));
+
+console.log("typeof [1, 2, 3]:", typeof [1, 2, 3]);
+
+console.log("typeof function() {}:", typeof function () {});
+
+/* typeof NaN returns "number". Even though NaN means
+"Not-a-Number", because it a special value in the JavaScript number type.*/
+
+/*typeof (typeof 42) returns "string" because the first typeof 42
+returns the string "number". The second typeof checks the type
+of that returned value, which is a string.*/
+
+/* typeof [1,2,3] returns "object" because arrays are objects in JavaScript.*/
+
