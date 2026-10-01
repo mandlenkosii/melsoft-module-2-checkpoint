@@ -357,3 +357,33 @@ console.log(receipt);
 
 /* I basically just changed and used const for the variables and changed the naming such that it is easier to understand */
 
+//============================================================================================================================
+// CHALLENGE 8 : RECEIPT 
+console.log("\n========================================================================================================================")
+
+
+// Product info
+const productName = "Baby Stroller ";
+const unitPrice = 5000.00;
+const quantity1 = 2;
+const taxRate1 = 0.15;
+
+//Accounting for invalid input
+if (quantity1 <=0){
+    console.log("Invalid quantity. Quantity must be greater than 0.");
+}
+// Subtotal calculation
+const subtotal1 = unitPrice * quantity1;
+
+const vat = subtotal1 * taxRate1;
+
+const total1 = subtotal1 + vat;
+
+// Rendering the receipt 
+
+console.log("Product:", productName);
+console.log("Unit price: R" + unitPrice);
+console.log("Quantity:", quantity1);
+console.log("Subtotal: R" + subtotal1);
+console.log("VAT: R" + vat);
+console.log("Total: R" + total1);
