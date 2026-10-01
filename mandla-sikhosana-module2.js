@@ -387,3 +387,34 @@ console.log("Quantity:", quantity1);
 console.log("Subtotal: R" + subtotal1);
 console.log("VAT: R" + vat);
 console.log("Total: R" + total1);
+
+
+//=============================================================================================================
+// CHALLENGE 10 : Predict the output before it runs
+console.log("\n======================================================================================================================================================================================")
+
+/* Prediction for the first code: The string which is number 10 will first be converted by JavaScript to an actual number for it to be able to be divided, then typeof result will be a number and the result will be 2*/
+let mystery = "10";
+let count = 5;
+let result = mystery / count;
+console.log(typeof result);
+console.log(result);
+// After running it my prediction was right
+
+
+/* Prediction for the 2nd code: Since the string now is both a number and characters I dont think JavaScript will be able to convert it to just a number 
+meaning it might be impossible to run this code and end up giving an erro or not a number result*/
+let mystery2 = "10a";
+let count2 = 5;
+let result2 = mystery2 / count2;
+console.log(typeof result2);
+console.log(result2);
+console.log(result2 + 1);
+
+
+/* Prediction for the last code: I noticed that there is like a duplicate of the varibles in a sense that they share the same values(result3 and result4), so both will be printed out since it was not neccessarily re-assigning */
+let mystery3 = "10";
+let result3 = mystery3 + 5 + 5;
+let result4 = 5 + 5 + mystery3;
+console.log(result3);
+console.log(result4);
