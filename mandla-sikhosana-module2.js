@@ -323,3 +323,37 @@ Instead of expecting two decimal calculations to be exactly equal,
 we can check whether the difference between them is small enough.
 
 To avoid the problems related to floation-point rounding problems*/
+
+
+// =============================================================================================================
+// CHALLENGE 7 : Refactoring
+console.log("\n=======================================================================================================================================")
+
+/* ORGINAL CODE
+var p = "199.99"
+var q = "3"
+var t = 0.15
+var sub = p * q
+var tax = sub * t
+var tot = sub + tax
+var r = "Total: " + tot */
+
+//Updated code
+
+const price = 199.99;// it was string and changed it to number as it will make sense when making calculation later
+const quantity = 3;// even the quantity was a string while it needs to a number
+
+const taxRate =  0.15;//it was poorly labeled so I changed it to taxrate since it also has decimals
+
+const subtotal = price * quantity;// used const and clearly labeled the variables
+
+const tax = subtotal * taxRate;
+
+const total = subtotal + tax;
+
+const receipt = 'Total: R' + total;
+
+console.log(receipt);
+
+/* I basically just changed and used const for the variables and changed the naming such that it is easier to understand */
+
