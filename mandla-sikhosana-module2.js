@@ -173,3 +173,79 @@ parseFloat("3.14") returns 3.14, while parseInt("3.14") returns 3.*/
 
 /*Number("") returns 0. This confusing because it is supposed to return not a number*/
 
+
+//=======================================================================================================================================
+// CHALLENGE 4 - What does this print? And why?
+console.log("\n=================================================================================================================")
+
+/* "5" + 3
+a. Prediction : error
+b. type : error
+c. because from my understanding the addition operator can only work on data types of the same kind.
+d. results : it printed 53 meaning it can add a string and a Number.*/
+console.log("5"+ 3);
+
+/*
+a. Prediction : 2
+b. type : number
+c. because the - operator converts the string "5" into a number.*/
+console.log("5"-3);
+
+/* "5" * "2"
+a. Prediction : 10
+b. type: number
+c. same reason because the * operator gets to convert both strings into numbers*/
+console.log("5" * "2");
+
+/* true + 1
+a. Prediction : 2
+b. type - number
+c. I think Javascript will convert or take true as 1 when doing numeric addition*/
+console.log(true + 1);
+
+/* true + "1"
+a. Prediction : not sure but since are both strings the will be just combined
+b. type: string*/
+console.log(true + "1");
+
+/* false + null
+a. Prediction : 0
+b. number
+c. because both represent zero when it comes to numeric addition/conversion*/
+console.log(false + null);
+
+/* null + undefined
+a. Prediction: NaN
+b. type : NaN
+c. because undefined cannot be converted into a valid number*/
+console.log(null + undefined);
+
+/* 1/0
+a. Prediction: O
+b. type : number
+c. because dividing by zero give zero*/
+console.log(1/0);
+
+/* 0/0
+a. Prediction: 0
+b. type : number 
+c. anything divided by zero will be zero*/
+console.log(0/0);
+
+/* "abc" - 1
+a. Prediction : error or not a number
+b. type : 
+c. abc cant be converted to make this nurmeric conversion possible*/
+console.log("abc" - 1);
+
+/* [] + []
+a. Prediction : ""
+b. type : string
+c. empty arrays get to converted into empty strings*/
+console.log([] + []);
+
+/* [1] + [2] 
+a. Prediction : 12
+b. type : strings
+c. since arrays get to be converted to strings, then this means 1 and 2 will be strings and whe put together they will form a string of 12*/
+console.log([1] + [2]);
