@@ -290,3 +290,36 @@ console.log("Admin: " + IsAdmin);
 reassigned. I also changed values such as age, salary and the
 score adjustment from strings to numbers so calculations use
 the correct data types.*/
+
+//==============================================================================================================
+// CHALLENGE 6 : 
+console.log("\n=====================================================================================================================")
+
+
+
+console.log( 0.1 + 0.2);
+
+console.log( 0.3 - 0.1);
+
+console.log( 0.1 * 3);
+
+console.log( 0.1 + 0.2 === 0.3);
+
+
+// Calculating the difference and the actual floation-point result
+const difference = Math.abs((0.1 + 0.2) - 0.3);
+console.log(difference);
+
+
+console.log("Close enough: ", difference < Number.EPSILON);
+
+/* Some decimal values, such as 0.1 and 0.2, cannot be represented
+exactly in binary. Because of this, JavaScript can produce a very
+small rounding error when performing calculations.
+Number.EPSILON is a very small value that can be used as a tolerance
+when comparing floating-point numbers.
+
+Instead of expecting two decimal calculations to be exactly equal,
+we can check whether the difference between them is small enough.
+
+To avoid the problems related to floation-point rounding problems*/
