@@ -249,3 +249,44 @@ a. Prediction : 12
 b. type : strings
 c. since arrays get to be converted to strings, then this means 1 and 2 will be strings and whe put together they will form a string of 12*/
 console.log([1] + [2]);
+
+//=============================================================================================================
+//CHALLENGE 5 :  junior developer's code
+console.log("\n==========================================================================================================================")
+
+const UserName = "Sarah"; // var was used instead of const or let
+
+const UserAge = 25; // age is a numeric value and here it was used as a string
+
+const UserScore = 85.5; // This good since score is a number
+
+const ScoredAdjustment = 10; // it was used as string instead of number and would have given problems in future calculations
+
+const NewScore = UserScore + ScoredAdjustment;// again var was used and also + was used with a number and string
+
+console.log("New score:" + NewScore);
+
+
+const Salary = 50000;// it was store as a string instead of a number
+const Tax_Rate = 0.15;// var was used 
+
+const Tax = Salary * Tax_Rate;
+console.log("Tax:" + Tax);
+
+
+const YearsUntilRetirement = 65 - UserAge;
+
+console.log("Years until retirement: " + YearsUntilRetirement);
+
+
+const TotalAgeAndScore = UserAge + UserScore; // var was used instead of let or const and instead of adding it would have concatenates them.
+console.log("Age + score: " + TotalAgeAndScore);
+
+
+const IsAdmin = false; // false was a string instead of an actual boolean value
+console.log("Admin: " + IsAdmin);
+
+/* I changed var to const because these values do not need to be
+reassigned. I also changed values such as age, salary and the
+score adjustment from strings to numbers so calculations use
+the correct data types.*/
